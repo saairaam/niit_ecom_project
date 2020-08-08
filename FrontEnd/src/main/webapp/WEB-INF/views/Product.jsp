@@ -13,7 +13,7 @@
 	
 	<tr>
 		<td>Price</td>
-		<td><form:input path="price"/></td>
+		<td><form:input path="productprice"/></td>
 	</tr>
 	
 	<tr>

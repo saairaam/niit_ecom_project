@@ -9,7 +9,7 @@
 		</tr>	
 		<tr>
 			<td>Product ID</td>
-			<td>${productInfo.productID }</td>
+			<td>${productInfo.productId }</td>
 		</tr>
 		<tr>
 			<td>Product Name</td>
@@ -25,7 +25,7 @@
 		</tr>
 		<tr>
 			<td>Price</td>
-			<td>${productInfo.price }</td>
+			<td>${productInfo.productPrice }</td>
 		</tr>
 		<tr>
 			<td>Stock</td>
