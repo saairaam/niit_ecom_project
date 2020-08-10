@@ -13,17 +13,17 @@
 	
 	<tr>
 		<td>Price</td>
-		<td><form:input path="productprice"/></td>
+		<td><form:input path="productPrice"/></td>
 	</tr>
 	
 	<tr>
 		<td>Stock</td>
-		<td><form:input path="quantity"/></td>
+		<td><form:input path="productQuantity"/></td>
 	</tr>
 	
 	<tr>
 		<td>Category</td>
-		<td><form:select path="categoryID">
+		<td><form:select path="categoryId">
 				<form:option value="0" label="--Select List--"/>
 				<form:options items="${categoryList }" />
 			</form:select>
@@ -32,7 +32,7 @@
 	
 	<tr>
 		<td>Supplier</td>
-		<td><form:select path="supplierID">
+		<td><form:select path="supplierId">
 				<form:option value="0" label="--Select List--"/>
 				<form:options items="${supplierList }"/>
 		</form:select>
@@ -41,7 +41,7 @@
 	
 	<tr>
 		<td>Product Description</td>
-		<td><form:input path="productDesc"/></td>
+		<td><form:input path="productDescription"/></td>
 	</tr>
 	<tr>
 		<td>Product Image</td>
@@ -74,14 +74,14 @@
 	</tr>
 	<c:forEach items="${productList }" var = "product">
 		<tr>
-			<td><img src="<c:url value="/resources/images/${product.productID }.jpg"/>" class="img-thumbnail" height="50" width="50"/></td>
-			<td>${product.productID }</td>
+			<td><img src="<c:url value="/resources/images/${product.productId }.jpg"/>" class="img-thumbnail" height="50" width="50"/></td>
+			<td>${product.productId }</td>
 			<td>${product.productName }</td>
-			<td>${product.productDesc }</td>
-			<td>${product.price }</td>
-			<td>${product.quantity }</td>
-			<td><a href="<c:url value="/editProduct/${product.productID}"/>" class="glyphicon glyphicon-pencil"></a></td>
-			<td><a href="<c:url value="/deleteProduct/${product.productID}" />" class="glyphicon glyphicon-trash"></a></td>
+			<td>${product.productDescription }</td>
+			<td>${product.productPrice }</td>
+			<td>${product.productQuantity }</td>
+			<td><a href="<c:url value="/editProduct/${product.productId}"/>" class="glyphicon glyphicon-pencil"></a></td>
+			<td><a href="<c:url value="/deleteProduct/${product.productId}" />" class="glyphicon glyphicon-trash"></a></td>
 		</tr>
 	</c:forEach>
 </table>

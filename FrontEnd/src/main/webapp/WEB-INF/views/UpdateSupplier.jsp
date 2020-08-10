@@ -7,7 +7,7 @@
 	<table align="center" class="table-bordered">
 		<tr>
 			<td>Supplier ID</td>
-			<td><input type="text" name="supplierID" value="${supplierData.supplierID }"/ readonly></td>
+			<td><input type="text" name="supplierId" value="${supplierData.supplierId }"/ readonly></td>
 		</tr>
 		<tr>
 			<td colspan ="2">Supplier Detail</td>

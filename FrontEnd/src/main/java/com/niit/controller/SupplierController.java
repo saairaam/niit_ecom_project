@@ -20,7 +20,7 @@ public class SupplierController {
 	@Autowired
 	SupplierDAO supplierDAO;
 	
-	@RequestMapping("/supplier")
+	@RequestMapping("/Supplier")
 	public String showCategoryPage(Model m) {
 		
 		List<Supplier> listSupplier = supplierDAO.listSupplier();
@@ -46,9 +46,9 @@ public class SupplierController {
 	}
 	
 	@RequestMapping(value="/updateSupplier",method=RequestMethod.POST)
-	public String updateSupplier(@RequestParam("supplierID")int supplierID,@RequestParam("supplierName")String supplierName,@RequestParam("supplierAddress")String supplierAddress,Model m) {
+	public String updateSupplier(@RequestParam("supplierId")int supplierId,@RequestParam("supplierName")String supplierName,@RequestParam("supplierAddress")String supplierAddress,Model m) {
 		
-		Supplier supplier = supplierDAO.getSupplierId(supplierID);
+		Supplier supplier = supplierDAO.getSupplierId(supplierId);
 		supplier.setSupplierName(supplierName);
 		supplier.setSupplierAddress(supplierAddress);
 		
@@ -61,19 +61,19 @@ public class SupplierController {
 		
 	}
 	
-	@RequestMapping(value="/editSupplier/{supplierID}")
-	public String editSupplier(@PathVariable("supplierID")int supplierID,Model m) {
+	@RequestMapping(value="/editSupplier/{supplierId}")
+	public String editSupplier(@PathVariable("supplierId")int supplierId,Model m) {
 		
-		Supplier supplier = supplierDAO.getSupplierId(supplierID);
+		Supplier supplier = supplierDAO.getSupplierId(supplierId);
 		m.addAttribute("supplierData",supplier);
 		
 		return "UpdateSupplier";
 	}
 	
-	@RequestMapping(value="/deleteSupplier/{supplierID}")
-	public String deleteSupplier(@PathVariable("supplierID")int supplierID,Model m) {
+	@RequestMapping(value="/deleteSupplier/{supplierId}")
+	public String deleteSupplier(@PathVariable("supplierId")int supplierId,Model m) {
 		
-		Supplier supplier = supplierDAO.getSupplierId(supplierID);
+		Supplier supplier = supplierDAO.getSupplierId(supplierId);
 		supplierDAO.deleteSupplier(supplier);
 		
 		List<Supplier> listSupplier = supplierDAO.listSupplier();

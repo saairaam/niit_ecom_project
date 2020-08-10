@@ -4,7 +4,7 @@
 	<table align = "center" class = "table">
 		<tr>
 			<td rowspan ="10">
-				<img src="<c:url value="/resources/images/${productInfo.productID }.jpg"/>" height = "300" width ="200"/>
+				<img src="<c:url value="/resources/images/${productInfo.productId }.jpg"/>" height = "300" width ="200"/>
 			</td>
 		</tr>	
 		<tr>
@@ -18,7 +18,7 @@
 		<tr>
 			<td>Category</td>
 			<td>${categoryName}</td>
-		</tr>
+		</tr>q
 		<tr>
 			<td>Supplier Name</td>
 			<td>${supplierName }</td>
@@ -35,7 +35,7 @@
 			<td>Product Description</td>
 			<td>${productInfo.productDesc }</td>
 		</tr>
-		<form action = "<c:url value="/addToCart/${productInfo.productID }"/>" method="get">
+		<form action = "<c:url value="/addToCart/${productInfo.productId }"/>" method="get">
 			<tr>
 				<td>Quantity</td>
 				<td><input type="text" name="quantity" required/></td>

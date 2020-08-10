@@ -11,7 +11,7 @@
 </head>
 <style>
 body{
-background-image: url("https://wallpaperplay.com/walls/full/f/9/9/8973.jpg");
+background-image: url("https://colorlib.com/wp/wp-content/uploads/sites/2/wordpress-shopping-cart-plugins.png");
 background-size:100%;
 }
 </style>
@@ -36,17 +36,17 @@ background-size:100%;
 			<c:if test="${sessionScope.loggedIn }">
 				<c:if test="${sessionScope.role=='ROLE_ADMIN' }">
 					<ul class="nav navbar-nav">
-						<!-- <li><a href="#" class="glyphicon glyphicon-home"> Home</a> -->
-						<li><a href="category" class="glyphicon glyphicon-th-list"> Category</a></li>
-						<li><a href="supplier" class="glyphicon glyphicon-user"> Supplier</a></li>
+					<li><a href="#" class="glyphicon glyphicon-home"> Home</a> 
+						<li><a href="Category" class="glyphicon glyphicon-th-list"> Category</a></li>
+						<li><a href="Supplier" class="glyphicon glyphicon-user"> Supplier</a></li>
 						<li><a href="product" class="glyphicon glyphicon-th"> Product</a></li>
 					</ul>
 				</c:if>
 				<c:if test="${sessionScope.role=='ROLE_USER' }">
 					<ul class="nav navbar-nav">
-						<!-- <li><a href="#" class="glyphicon glyphicon-home"> Home</a> -->
+						 <li><a href="#" class="glyphicon glyphicon-home"> Home</a>
 						<li><a href="<c:url value="/productCatalog"/>" class="glyphicon glyphicon-th"> Product</a></li>
-						<li><a href="<c:url value="/cart"/>" class="glyphicon glyphicon-shopping-cart"> Cart</a></li>
+						<li><a href="<c:url value="/Cart"/>" class="glyphicon glyphicon-shopping-cart"> Cart</a></li>
 						
 					</ul>
 				</c:if>

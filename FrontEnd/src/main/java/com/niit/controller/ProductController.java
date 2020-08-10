@@ -60,7 +60,7 @@ public class ProductController {
 				
 		productDAO.addProduct(product);
 		
-		String imagePath = "C:\\Users\\SAIKRISHNAN\\NIIT_Project\\FrontEnd\\src\\main\\resources\\images\\";
+		String imagePath = "C:\\Users\\saairaam prasad\\git\\niit_ecom_project\\FrontEnd\\src\\main\\resources\\images";
 		imagePath=imagePath+String.valueOf(product.getProductId())+".jpg";
 		
 		File myfile = new File(imagePath);
@@ -126,7 +126,7 @@ public class ProductController {
 	}
 	
 	@RequestMapping(value="/deleteProduct/{productID}")
-	public String deleteProduct(@PathVariable("productID")int productID,Model m) {
+	public String deleteProduct(@PathVariable("productId")int productID,Model m) {
 		
 		Product product = productDAO.getProductId(productID);
 		productDAO.deleteProduct(product);
@@ -147,7 +147,7 @@ public class ProductController {
 	}
 	
 	@RequestMapping(value="/editProduct/{productID}")
-	public String editProduct(@PathVariable("productID")int productID,Model m) {
+	public String editProduct(@PathVariable("productId")int productID,Model m) {
 		
 		Product product = productDAO.getProductId(productID);
 		m.addAttribute("productData",product);
@@ -165,7 +165,7 @@ public class ProductController {
 	}
 	
 	@RequestMapping(value="/updateProduct",method=RequestMethod.POST)
-	public String updateProduct(@RequestParam("productID")int productID,@RequestParam("productName")String productName,@RequestParam("productDesc")String productDesc,@RequestParam("price")int price,@RequestParam("quantity")int stock,Model m) {
+	public String updateProduct(@RequestParam("productId")int productID,@RequestParam("productName")String productName,@RequestParam("productDesc")String productDesc,@RequestParam("price")int price,@RequestParam("quantity")int stock,Model m) {
 		
 		Product product = productDAO.getProductId(productID);
 		product.setProductName(productName);
@@ -193,8 +193,8 @@ public class ProductController {
 		return "ProductCatalog";
 	}
 	
-	@RequestMapping("/productDisplay/{productID}")
-	public String displaySingleProduct(@PathVariable("productID")int productID,Model m){
+	@RequestMapping("/productDisplay/{productId}")
+	public String displaySingleProduct(@PathVariable("productId")int productID,Model m){
 		
 		Product product = (Product)productDAO.getProductId(productID);
 		m.addAttribute("productInfo", product);

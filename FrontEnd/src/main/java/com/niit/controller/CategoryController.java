@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import com.niit.dao.CategoryDAO;
 import com.niit.model.Category;
 
+@SuppressWarnings("unused")
 @Controller
 public class CategoryController 
 {

@@ -7,7 +7,7 @@
 	<table align="center" class="table-bordered">
 		<tr>
 			<td>Product ID</td>
-			<td><input type="text" name="productID" value="${productData.productID }"/ readonly></td>
+			<td><input type="text" name="productID" value="${productData.productId }"/ readonly></td>
 		</tr>
 		<tr>
 			<td colspan ="2">Product Detail</td>

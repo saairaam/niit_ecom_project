@@ -59,11 +59,11 @@
 	<c:forEach items="${supplierList }" var = "supplier">
 		<tr>
 		
-			<td>${supplier.supplierID }</td>
+			<td>${supplier.supplierId }</td>
 			<td>${supplier.supplierName }</td>
 			<td>${supplier.supplierAddress }</td>
-			<td><a href="<c:url value="/editSupplier/${supplier.supplierID}"/>" class="glyphicon glyphicon-pencil"></a></td>
-			<td><a href="<c:url value="/deleteSupplier/${supplier.supplierID}" />" class="glyphicon glyphicon-trash"></a></td>
+			<td><a href="<c:url value="/editSupplier/${supplier.supplierId}"/>" class="glyphicon glyphicon-pencil"></a></td>
+			<td><a href="<c:url value="/deleteSupplier/${supplier.supplierId}" />" class="glyphicon glyphicon-trash"></a></td>
 		</tr>
 	</c:forEach>
 </table>
