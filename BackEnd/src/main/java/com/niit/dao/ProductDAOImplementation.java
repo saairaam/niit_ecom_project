@@ -84,6 +84,12 @@ public class ProductDAOImplementation implements ProductDAO
 		session.close();
 		return listproduct;
 	}
+
+	@Override
+	public Product get(int productid) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 
 }

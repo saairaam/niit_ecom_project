@@ -31,7 +31,7 @@ public class CategoryDAOTest
 	public void addCategoryTest()
 	{
 		Category category=new Category();
-		category.setCategoryDescription("All Mobiles are Available");
+		category.setCategoryDescription("All Mobiles aree not Available");
 		category.setCategoryName("Mobile");
 		assertTrue("problem in Addding Category!",categorydao.addCategory(category));
 	}
