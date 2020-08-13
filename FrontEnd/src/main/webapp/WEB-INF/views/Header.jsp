@@ -17,8 +17,14 @@ background-size:100%;
 }
 </style>
 <body>
+  <div class="jumbotron">
+     <div class="container text-center">
+      <h1>Online Store</h1>      
+      <p>Mission, Vission & Values</p>
+    </div>
+ </div>
 <div class="container">
-	<nav class="navbar navbar-inverse">
+	<nav class="navbar navbar-default">
 		<div class="container-fluid">
 			<div class="navbar-header">
 				<a class="navbar-brand" href="index">Smart Mobiles</a>
