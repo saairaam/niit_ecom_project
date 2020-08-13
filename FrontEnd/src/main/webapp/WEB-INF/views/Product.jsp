@@ -16,10 +16,7 @@
                             
 <table align ="center">
 
-		<td>Product ID</td>
-		<td><form:input path="productId"/></td>
-	</tr>
-	
+		
 	<tr>
 		<td>Product Name</td>
 		<td><form:input path="productName"/></td>

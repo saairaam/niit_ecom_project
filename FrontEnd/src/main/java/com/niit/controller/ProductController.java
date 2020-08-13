@@ -165,7 +165,8 @@ public class ProductController {
 	}
 	
 	@RequestMapping(value="/updateProduct",method=RequestMethod.POST)
-	public String updateProduct(@RequestParam("productId")int productID,@RequestParam("productName")String productName,@RequestParam("productDescription")String productDesc,@RequestParam("productPrice")int price,@RequestParam("productQuantity")int stock,@RequestParam("productImage")MultipartFile image,Model m) {
+	public String updateProduct(@RequestParam("productId")int productID,@RequestParam("productName")String productName,@RequestParam("productDescription")String productDesc,@RequestParam("productPrice")int price,@RequestParam("productQuantity")int stock,@RequestParam("productImage")MultipartFile image,Model m) 
+	{
 		
 		Product product = productDAO.getProductId(productID);
 		product.setProductId(productID);
@@ -176,7 +177,6 @@ public class ProductController {
 		product.setProductImage(image);
 		productDAO.updateProduct(product);
 		m.addAttribute("product", product);
-		
 		List<Product> listProduct = productDAO.listProduct();
 		m.addAttribute("productList", listProduct);
 		
