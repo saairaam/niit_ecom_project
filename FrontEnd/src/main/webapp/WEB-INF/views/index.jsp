@@ -3,7 +3,7 @@
 <body>
 <div class="container">
   <h2>Smart Phones</h2>
-   <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -17,44 +17,44 @@
     <div class="carousel-inner">
 
       <div class="item active">
-        <img src="resources/images_curosel/81c.jpg" style="width:1000px;height:490px;margin: 0 auto;">
+        <img src ="https://cdn.dnaindia.com/sites/default/files/styles/full/public/2018/12/31/772299-smartphone.jpg" style="width:1000px;height:490px;margin: 0 auto;">
         <div class="carousel-caption">
-          <h3>Smart Phones!</h3>
+          <h3 class="glyphicon glyphicon-tongue">Smart Phones</h3>
         </div>
       </div>
 
       <div class="item">
-        <img src="resources/images_curosel/82c.jpg" style="width:1000px;height:490px;margin: 0 auto;">
+        <img src="https://wallpapercave.com/wp/wp76280.jpg" style="width:1000px;height:490px;margin: 0 auto;">
         <div class="carousel-caption">
-          <h3>Colour Full realme</h3>
+          <h3>ColourFull realme</h3>
         </div>
       </div>
       
       <div class="item">
-        <img src="resources/images_curosel/83c.jpg" style="width:1000px;height:490px;margin: 0 auto;">
+        <img src="https://designlimitededition.com/wp-content/uploads/2014/12/interfaces.jpg" style="width:1000px;height:490px;margin: 0 auto;">
         <div class="carousel-caption">
-          <h3>Information from smart phones</h3>
+          <h3>User Interaction</h3>
         </div>
       </div>
       
       <div class="item">
-        <img src="resources/images_curosel/84c.jpg" style="width:1000px;height:490px;margin: 0 auto;">
+        <img src="https://live.staticflickr.com/5507/10665021924_636b38b66a_b.jpg" style="width:1000px;height:490px;margin: 0 auto;">
         <div class="carousel-caption">
           <h3>HD video</h3>
         </div>
       </div>
       
       <div class="item">
-        <img src="resources/images_curosel/85c.jpg" style="width:1000px;height:490px;margin: 0 auto;">
+        <img src="https://wallpaperaccess.com/full/644238.jpg" style="width:1000px;height:490px;margin: 0 auto;">
         <div class="carousel-caption">
-          <h3>Smart way to use smart phones</h3>
+          <h3>iPhone cloud service</h3>
         </div>
       </div>
       
       <div class="item">
-        <img src="resources/images_curosel/86c.jpg" style="width:1000px;height:490px;margin: 0 auto;">
+        <img src="https://images.anandtech.com/doci/9770/X-T30_DSF2310_678x452.jpg" style="width:1000px;height:490px;margin: 0 auto;">
         <div class="carousel-caption">
-          <h3>Current Updates</h3>
+          <h3>Collection of latest mobiles</h3>
         </div>
       </div>
       
@@ -77,7 +77,7 @@
   <div class="col-md-3">
     <div class="thumbnail">
       <a href="<c:url value="/login"/>">
-        <img src="<c:url value="/resources/images/81.jpg"/>" alt="Lights" style="width:100%">
+        <img src="https://www.gizmochina.com/wp-content/uploads/2019/08/Xiaomi-Redmi-Note-8-Pro-2-500x500.jpg" alt="Lights" style="width:150px;height:150px;margin: 0 auto">
         <div class="caption">
           <p><h2>Redmi</h2>
           Order it now!</p>
@@ -88,9 +88,9 @@
   <div class="col-md-3">
     <div class="thumbnail">
       <a href="<c:url value="/login"/>">
-        <img src="<c:url value="/resources/images/83.jpg"/>" alt="Lights" style="width:100%">
+        <img src="<c:url value="https://www.pcworld.idg.com.au/products/image/12871/angle/8/1500x1500/395369/"/>" alt="Lights" style="width:150px;height:150px;margin: 0 auto">
         <div class="caption">
-          <p><h2>Redmi Note7 Pro</h2>
+          <p><h2>Realme</h2>
           Order it now!</p>
         </div>
       </a>
@@ -99,7 +99,7 @@
   <div class="col-md-3">
     <div class="thumbnail">
       <a href="<c:url value="/login"/>">
-        <img src="<c:url value="/resources/images/84.jpg"/>" alt="Lights" style="width:100%">
+        <img src="<c:url value="https://images-na.ssl-images-amazon.com/images/I/713nieQ1V9L._SX679_.jpg"/>" alt="Lights" style="width:150px;height:150px;margin: 0 auto">
         <div class="caption">
           <p><h2>Vivo</h2>
           Order it now!</p>
@@ -110,7 +110,7 @@
   <div class="col-md-3">
     <div class="thumbnail">
       <a href="<c:url value="/login"/>">
-        <img src="<c:url value="/resources/images/86.jpg"/>" alt="Lights" style="width:100%">
+        <img src="<c:url value="https://cdn1.smartprix.com/rx-irth0AJ4V-w240-h290/lava-z81-2gb-ram-16g.jpg"/>" alt="Lights" style="width:150px;height:150px;margin: 0 auto">
         <div class="caption">
           <p><h2>Lava</h2>
           Order it now!</p>
@@ -121,9 +121,9 @@
   <div class="col-md-3">
     <div class="thumbnail">
       <a href="<c:url value="/login"/>">
-        <img src="<c:url value="/resources/images/87.jpg"/>" alt="Lights" style="width:100%">
+        <img src="<c:url value="https://5.imimg.com/data5/DV/NF/DF/SELLER-11881336/realme-5-500x500.jpg"/>" alt="Lights" style="width:150px;height:150px;margin: 0 auto">
         <div class="caption">
-          <p><h2>Redmi</h2>
+          <p><h2>Realme</h2>
           Order it now!</p>
         </div>
       </a>
@@ -132,7 +132,7 @@
   <div class="col-md-3">
     <div class="thumbnail">
       <a href="<c:url value="/login"/>">
-        <img src="<c:url value="/resources/images/89.jpg"/>" alt="Lights" style="width:100%">
+        <img src="<c:url value="https://images-eu.ssl-images-amazon.com/images/G/31/img18/Wireless/AppleProjectEye/Updated/AMZ_FamiyStripe_iPhone_11._CB450736421_.png"/>" alt="Lights" style="width:150px;height:150px;margin: 0 auto">
         <div class="caption">
           <p><h2>iPhone</h2>
           Order it now!</p>
@@ -143,46 +143,15 @@
   <div class="col-md-3">
     <div class="thumbnail">
       <a href="<c:url value="/login"/>">
-        <img src="<c:url value="/resources/images/188.jpg"/>" alt="Lights" style="width:100%">
+        <img src="<c:url value="https://static.toiimg.com/thumb/msid-70737428,width-220,resizemode-4,imgv-4/OPPO-Reno-2F.jpg"/>" alt="Lights" style="width:150px;height:150px;margin: 0 auto">
         <div class="caption">
-          <p><h2>Oppo</h2>          
+          <p><h2>Oppo</h2>
           Order it now!</p>
         </div>
       </a>
     </div>
   </div>
-  <div class="col-md-3">
-    <div class="thumbnail">
-      <a href="<c:url value="/login"/>">
-        <img src="<c:url value="/resources/images/190.jpg"/>" alt="Lights" style="width:100%">
-        <div class="caption">
-          <p><h2>iPhone</h2>
-          Order it now!</p>
-        </div>
-      </a>
-    </div>
-  </div>
-  <div class="col-md-3">
-    <div class="thumbnail">
-      <a href="<c:url value="/login"/>">
-        <img src="<c:url value="/resources/images/191.jpg"/>" alt="Lights" style="width:100%">
-        <div class="caption">
-          <p><h2>Samsung</h2>
-          Order it now!</p>
-        </div>
-      </a>
-    </div>
-  </div>
-  <div class="col-md-3">
-    <div class="thumbnail">
-      <a href="<c:url value="/login"/>">
-        <img src="<c:url value="/resources/images/192.jpg"/>" alt="Lights" style="width:100%">
-        <div class="caption">
-          <p><h2>Redmi</h2>
-          Order it now!</p>
-        </div>
-      </a>
-    </div>
+  
   </div>
  </div>
  </div>

@@ -1,45 +1,34 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Smart Mobiles</title>
-<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-<style>
-h4{
-color:black;
-}
-</style>
-
 
 </head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+<style>
 <body>
+ 	body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
+</style> 
+</head>
+<body>
+ 
+ <body class="w3-light-grey">
+ <div class="w3-container w3-padding-32 w3-black w3-opacity w3-card w3-hover-opacity-off" style="margin:32px 0;" align="center">
+   <footer>
+  <div class="w3-xlarge w3-padding-16">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  </footer>
 
-<hr>
-<div class="container-fluid"> 
-<div class="row">
-<div class="col-md-4">
-<h4><span class="glyphicon glyphicon-home"></span><a href="/index"> Home</a></h4>
-<h4><span class="glyphicon glyphicon-th"></span><a href="/aboutus"> About Us</a></h4>
-<h4><span class="glyphicon glyphicon-phone-alt"></span><a href="/contactus"> Contact Us</a></h4>
-</div>
-<div class="col-md-4">
-<h4><span class="glyphicon glyphicon-envelope"></span><a href="https://accounts.google.com/SignUp?hl=en-GB" > Mail Us</a></h4>
-
-        
-        
-      <h4><span class="glyphicon glyphicon-credit-card"></span><a href="login" > Pay by cards</a></h4>
-</div>
-<div class="col-md-4">
-<h4><span class="glyphicon glyphicon-pencil "></span><a href="https://twitter.com/login"> Twitter</a></h4>
-<h4><span class="glyphicon glyphicon-pencil "></span><a href="https://en-gb.facebook.com/login/"> Facebook</a></h4>
-
-</div>
-</div>
-</div>
 </body>
 </html>

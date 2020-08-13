@@ -61,7 +61,7 @@
 		
 			<td>${category.categoryId}</td>
 			<td>${category.categoryName }</td>
-			<td>${category.categoryDesc }</td>
+			<td>${category.categoryDescription }</td>
 			<td><a href="<c:url value="/editCategory/${category.categoryId}"/>" class="glyphicon glyphicon-pencil"></a></td>
 			<td><a href="<c:url value="/deleteCategory/${category.categoryId}" />" class="glyphicon glyphicon-trash"></a></td>
 		</tr>

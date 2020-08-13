@@ -3,6 +3,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
+<title>smart mobiles</title>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1 height=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -24,7 +25,7 @@ background-size:100%;
 			</div>
 			<c:if test="${!sessionScope.loggedIn }">
 			<ul class="nav navbar-nav">
-				<li><a href="index" class="glyphicon glyphicon-home"> Home</a>
+				
 				<li><a href="aboutus" class="glyphicon glyphicon-user"> About Us</a></li>
 				<li><a href="contactus" class="glyphicon glyphicon-earphone"> Contact Us</a></li>
 			</ul>
@@ -36,17 +37,17 @@ background-size:100%;
 			<c:if test="${sessionScope.loggedIn }">
 				<c:if test="${sessionScope.role=='ROLE_ADMIN' }">
 					<ul class="nav navbar-nav">
-					<li><a href="#" class="glyphicon glyphicon-home"> Home</a> 
-						<li><a href="Category" class="glyphicon glyphicon-th-list"> Category</a></li>
+					
+						<li><a href="category" class="glyphicon glyphicon-th"> Category</a></li>
 						<li><a href="Supplier" class="glyphicon glyphicon-user"> Supplier</a></li>
 						<li><a href="product" class="glyphicon glyphicon-th"> Product</a></li>
 					</ul>
 				</c:if>
 				<c:if test="${sessionScope.role=='ROLE_USER' }">
 					<ul class="nav navbar-nav">
-						 <li><a href="#" class="glyphicon glyphicon-home"> Home</a>
+						 
 						<li><a href="<c:url value="/productCatalog"/>" class="glyphicon glyphicon-th"> Product</a></li>
-						<li><a href="<c:url value="/Cart"/>" class="glyphicon glyphicon-shopping-cart"> Cart</a></li>
+						<li><a href="<c:url value="/cart"/>" class="glyphicon glyphicon-shopping-cart"> Cart</a></li>
 						
 					</ul>
 				</c:if>

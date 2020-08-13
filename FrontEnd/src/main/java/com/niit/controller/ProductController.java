@@ -55,12 +55,12 @@ public class ProductController {
 	}
 	
 	@RequestMapping(value="/addProduct",method=RequestMethod.POST)
-	public String addProduct(@ModelAttribute("product")Product product,@RequestParam("productImage")MultipartFile productImage,Model m,BindingResult result)
+	public String addProduct(@ModelAttribute("product")Product product, @RequestParam("productImage")MultipartFile productImage,Model m,BindingResult result)
 	{
 				
 		productDAO.addProduct(product);
 		
-		String imagePath = "C:\\Users\\saairaam prasad\\git\\niit_ecom_project\\FrontEnd\\src\\main\\resources\\images";
+		String imagePath = "C:\\Users\\saairaam prasad\\git\\niit_ecom_project\\FrontEnd\\src\\main\\resources\\";
 		imagePath=imagePath+String.valueOf(product.getProductId())+".jpg";
 		
 		File myfile = new File(imagePath);
@@ -125,7 +125,7 @@ public class ProductController {
 		
 	}
 	
-	@RequestMapping(value="/deleteProduct/{productID}")
+	@RequestMapping(value="/deleteProduct/{productId}")
 	public String deleteProduct(@PathVariable("productId")int productID,Model m) {
 		
 		Product product = productDAO.getProductId(productID);
@@ -146,7 +146,7 @@ public class ProductController {
 		return "Product";
 	}
 	
-	@RequestMapping(value="/editProduct/{productID}")
+	@RequestMapping(value="/editProduct/{productId}")
 	public String editProduct(@PathVariable("productId")int productID,Model m) {
 		
 		Product product = productDAO.getProductId(productID);
@@ -165,14 +165,15 @@ public class ProductController {
 	}
 	
 	@RequestMapping(value="/updateProduct",method=RequestMethod.POST)
-	public String updateProduct(@RequestParam("productId")int productID,@RequestParam("productName")String productName,@RequestParam("productDesc")String productDesc,@RequestParam("price")int price,@RequestParam("quantity")int stock,Model m) {
+	public String updateProduct(@RequestParam("productId")int productID,@RequestParam("productName")String productName,@RequestParam("productDescription")String productDesc,@RequestParam("productPrice")int price,@RequestParam("productQuantity")int stock,@RequestParam("productImage")MultipartFile image,Model m) {
 		
 		Product product = productDAO.getProductId(productID);
+		product.setProductId(productID);
 		product.setProductName(productName);
 		product.setProductDescription(productDesc);
 		product.setProductPrice(price);
 		product.setProductQuantity(stock);
-		
+		product.setProductImage(image);
 		productDAO.updateProduct(product);
 		m.addAttribute("product", product);
 		
@@ -196,10 +197,11 @@ public class ProductController {
 	@RequestMapping("/productDisplay/{productId}")
 	public String displaySingleProduct(@PathVariable("productId")int productID,Model m){
 		
-		Product product = (Product)productDAO.getProductId(productID);
+		Product product=productDAO.getProductId(productID);
+		product.setProductId(productID);
 		m.addAttribute("productInfo", product);
-		m.addAttribute("categoryName", categoryDAO.getCategoryId(product.getCategoryId()).getCategoryName());
-		m.addAttribute("supplierName", supplierDAO.getSupplierId(product.getSupplierId()).getSupplierName());
+		
+		m.addAttribute("product",product);
 		return "ProductDisplay";
 	}
 	}

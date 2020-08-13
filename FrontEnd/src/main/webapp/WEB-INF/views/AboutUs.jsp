@@ -17,7 +17,7 @@ for the below cities</p>
   <div class="col-md-3">
     <div class="thumbnail">
       <a href="<c:url value="/login"/>">
-        <img src="<c:url value="/resources/images/188.jpg"/>" alt="Lights" style="width:100%" >
+        <img src="<c:url value="C:/Users/saairaam prasad/git/niit_ecom_project/FrontEnd/src/main/resources/images/188.jpg"/>" alt="Lights" style="width:100%" >
         <div class="caption">
           <p class="glyphicon glyphicon-hand-right" ><h2> Oppo</h2>
   <b>Enjoy your life</b></p>
@@ -28,7 +28,7 @@ for the below cities</p>
   <div class="col-md-3">
     <div class="thumbnail">
       <a href="<c:url value="/login"/>">
-        <img src="<c:url value="/resources/images/190.jpg"/>" alt="Lights" style="width:100%" >
+        <img src="<c:url value="C:/Users/saairaam prasad/git/niit_ecom_project/FrontEnd/src/main/resources/images/190.jpg"/>" alt="Lights" style="width:100%" >
         <div class="caption">
           <p class="glyphicon glyphicon-hand-right" ><h2> iPhone</h2>
           <b>Enjoy your life</b></p>
@@ -39,7 +39,7 @@ for the below cities</p>
   <div class="col-md-3">
     <div class="thumbnail">
       <a href="<c:url value="/login"/>">
-        <img src="<c:url value="/resources/images/191.jpg"/>" alt="Lights" style="width:100%" >
+        <img src="<c:url value="C:/Users/saairaam prasad/git/niit_ecom_project/FrontEnd/src/main/resources/images/192.jpg"/>" alt="Lights" style="width:100%" >
         <div class="caption">
           <p class="glyphicon glyphicon-hand-right" ><h2> Samsung</h2>
           <b>Enjoy your life</b></p>
@@ -50,7 +50,7 @@ for the below cities</p>
   <div class="col-md-3">
     <div class="thumbnail">
       <a href="<c:url value="/login"/>">
-        <img src="<c:url value="/resources/images/192.jpg"/>" alt="Lights" style="width:100%" >
+        <img src="<c:url value="C:/Users/saairaam prasad/git/niit_ecom_project/FrontEnd/src/main/resources/images/89.jpg"/>" alt="Lights" style="width:100%" >
         <div class="caption">
           <p class="glyphicon glyphicon-hand-right" ><h2> Redmi</h2>
           <b>Enjoy your life</b></p>

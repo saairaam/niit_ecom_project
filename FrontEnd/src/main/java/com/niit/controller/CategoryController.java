@@ -48,7 +48,7 @@ public class CategoryController
 	}
 	
 	@RequestMapping(value="/updateCategory",method=RequestMethod.POST)
-	public String updateCategory(@RequestParam("categoryID")int categoryID,@RequestParam("categoryName")String categoryName,@RequestParam("categoryDesc")String categoryDesc,Model m)
+	public String updateCategory(@RequestParam("categoryId")int categoryID,@RequestParam("categoryName")String categoryName,@RequestParam("categoryDesc")String categoryDesc,Model m)
 	{
 		
 		Category category = categoryDAO.getCategoryId(categoryID);
@@ -64,8 +64,8 @@ public class CategoryController
 		
 	}
 	
-	@RequestMapping(value="/editCategory/{categoryID}")
-	public String editCategory(@PathVariable("categoryID")int categoryID,Model m) {
+	@RequestMapping(value="/editCategory/{categoryId}")
+	public String editCategory(@PathVariable("categoryId")int categoryID,Model m) {
 		
 		Category category = categoryDAO.getCategoryId(categoryID);
 		m.addAttribute("categoryData",category);
@@ -73,8 +73,8 @@ public class CategoryController
 		return "UpdateCategory";
 	}
 	
-	@RequestMapping(value="/deleteCategory/{categoryID}")
-	public String deleteCategory(@PathVariable("categoryID")int categoryID,Model m) {
+	@RequestMapping(value="/deleteCategory/{categoryId}")
+	public String deleteCategory(@PathVariable("categoryId")int categoryID,Model m) {
 		
 		Category category = categoryDAO.getCategoryId(categoryID);
 		categoryDAO.deleteCategory(category);

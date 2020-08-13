@@ -11,7 +11,7 @@
 		<td>Delete</td>
 	</tr>
 	<c:forEach items="${cartItem }" var="cartItem">
-	<form action="<c:url value="/updateCartItem/${cartItem.cartItemId }"/>" method="get">
+	<form action="<c:url value="/updateCartItem/${cartItem.cartItemId }"/>" method="GET">
 	<tr>
 		<td>${cartItem.productName }</td>
 		<td>${cartItem.price }</td>

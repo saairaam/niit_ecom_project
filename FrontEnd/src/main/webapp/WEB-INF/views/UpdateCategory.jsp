@@ -19,7 +19,7 @@
                                     
                             <div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon">Category ID</span>
-                                        <input id="categoryname" type="text" class="form-control" name="categoryID" value="${categoryData.categoryID }" readonly>
+                                        <input id="categoryname" type="text" class="form-control" name="categoryID" value="${categoryData.categoryId }" readonly>
                             </div>
                             
                             <div style="margin-bottom: 25px" class="input-group">
@@ -29,7 +29,7 @@
                             
                             <div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon">Category Desc</span>
-                                        <input id="categoryname" type="text" class="form-control" name="categoryDesc" value="${categoryData.categoryDesc }" required>
+                                        <input id="categoryname" type="text" class="form-control" name="categoryDesc" value="${categoryData.categoryDescription }" required>
                             </div>
                             
                             <div style="margin-top:10px" class="form-group" align="center">
