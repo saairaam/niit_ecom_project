@@ -1,6 +1,7 @@
 package com.niit.model;
 import javax.persistence.Transient;
 
+import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartResolver;
 
 import javax.persistence.Entity;
@@ -22,9 +23,17 @@ public class Product
   int supplierId;
   int categoryId;
   
-@Transient
-private MultipartResolver filedetails;
-
+ 
+  @Transient
+	MultipartFile productImage;
+	
+	public MultipartFile getProductImage() {
+		return productImage;
+	}
+	
+	public void setProductImage(MultipartFile productImage) {
+		this.productImage = productImage;
+	}
 public int getProductId()
 {
 	return productId;
@@ -96,6 +105,5 @@ public void setCategoryId(int categoryId)
 }
 
 
-  
 
 }

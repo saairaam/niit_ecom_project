@@ -38,7 +38,7 @@ public class CartDAOTest
 		assertTrue("problem in adding to cart:",cartDAO.addCartItem(cartItem));
 	}
 	
-	@Ignore
+	
 	@Test
 	public void listCartItemTest() 
 	{

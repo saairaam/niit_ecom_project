@@ -14,7 +14,8 @@ import com.niit.model.Category;
 import com.niit.model.Product;
 import com.niit.model.Supplier;
 import com.niit.model.User;
-
+import com.niit.model.CartItem;
+import com.niit.model.OrderDetail;
 
 @Configuration
 @EnableTransactionManagement
@@ -47,8 +48,9 @@ public class dbconfig
 	  lsfb.addAnnotatedClass(Product.class);
 	  lsfb.addAnnotatedClass(Supplier.class);
 	  lsfb.addAnnotatedClass(User.class);
-	  	  
-	 
+	  lsfb.addAnnotatedClass(OrderDetail.class);	  
+	  lsfb.addAnnotatedClass(CartItem.class);
+	  
 	  SessionFactory sessionfactory=lsfb.buildSessionFactory();
 	  return sessionfactory;  	  	  
 	  
@@ -60,6 +62,7 @@ public class dbconfig
   { 	
 	  return new HibernateTransactionManager(sessionfactory);
   }
+  
   
   
 }

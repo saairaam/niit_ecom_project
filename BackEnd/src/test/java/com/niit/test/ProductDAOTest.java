@@ -30,6 +30,7 @@ public class ProductDAOTest
 	public void addProductTest()
 	{
 		Product product=new Product();
+		product.setProductId(81);
 		product.setProductDescription("All Mobiles are Available");
 		product.setProductName("Mobile");
 		product.setProductPrice(2000);
@@ -66,7 +67,7 @@ public class ProductDAOTest
 	}
 	 
 	
-	@Ignore
+	
 	@Test
 	public void listProduct()
 	{

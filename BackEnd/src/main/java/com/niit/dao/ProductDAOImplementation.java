@@ -85,11 +85,4 @@ public class ProductDAOImplementation implements ProductDAO
 		return listproduct;
 	}
 
-	@Override
-	public Product get(int productid) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-	
-
 }
